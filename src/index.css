@@ -2,3 +2,15 @@
   font-family: 'Roboto-Light';
   src: local('Roboto-Light'), url('./assets/fonts/Roboto-Light.ttf');
 }
+
+:root {
+  --DEFAULT_BLACK: rgba(0, 0, 0, 1);
+  --DEFAULT_BLUE: rgba(50, 110, 200, 1);
+  --DEFAULT_WHITE: rgba(255, 255, 255, 1);
+
+  --TEXT_SMALL: 15px;
+  --TEXT_NORMAL: 18px;
+  --TEXT_LARGEST: 50px;
+
+  --DEFAULT_BORDER_RADIUS: 5px;
+}

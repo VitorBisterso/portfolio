@@ -13,7 +13,7 @@
 
 .logoContainer {
   display: flex;
-  flex: 2;
+  flex: 1;
 }
 
 .logo {
@@ -42,16 +42,17 @@
 .menu li {
   float: right;
   margin: auto .5vw;
+  font-size: var(--TEXT_NORMAL);
 }
 
 .menu li:hover {
   transition: linear 0.2s;
-  color: rgba(50, 110, 200, 1);
+  color: var(--DEFAULT_BLUE);
 }
 
 .menu li:not(hover) {
   transition: linear 0.2s;
-  color: rgba(0, 0, 0, 1);
+  color: var(--DEFAULT_BLACK);
 }
 
 .selectLanguage {
@@ -65,7 +66,7 @@
 
 .title {
   font-family: 'Ubuntu';
-  font-size: 50px;
+  font-size: var(--TEXT_LARGEST);
 }
 
 .myPicture {
