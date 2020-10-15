@@ -3,6 +3,11 @@ import { initReactI18next } from 'react-i18next';
 
 import languages from './translations';
 
+const allLanguagesObject = [
+  { label: 'pt-br', value: 'pt' },
+  { label: 'en', value: 'en' },
+];
+
 // the translations
 const resources = {
   pt: { translation: languages.pt },
@@ -23,3 +28,4 @@ i18n
   });
 
 export default i18n;
+export { allLanguagesObject };

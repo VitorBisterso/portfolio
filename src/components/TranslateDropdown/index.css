@@ -1,0 +1,11 @@
+.container {
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  border-color: rgba(50, 110, 200, 1);
+}
+
+.container:focus {
+  outline: none;
+}

@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  display: flex;
+  flex: 2;
+}
+
+.logo {
+  width: 15%;
+}
+
+.menuFlags {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu {
+  flex: 1;
+  flex-direction: row;
+  font-family: 'Roboto-Light';
+  margin: auto 0;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+}
+
+.menu li {
+  float: right;
+  margin: auto .5vw;
+}
+
+.menu li:hover {
+  transition: linear 0.2s;
+  color: rgba(50, 110, 200, 1);
+}
+
+.menu li:not(hover) {
+  transition: linear 0.2s;
+  color: rgba(0, 0, 0, 1);
+}
+
+.selectLanguage {
+  margin-left: 1.5vw;
+}
+
+.homeBody {
+  margin: 1vw auto 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Ubuntu';
+  font-size: 50px;
+}
+
+.myPicture {
+  border-radius: 50%;
+}

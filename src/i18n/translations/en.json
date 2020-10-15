@@ -1,5 +1,8 @@
 {
-  "test_message": {
-    "learn_react": "Learn React"
+  "header": {
+    "about": "About me",
+    "academic": "Academic life",
+    "professional": "Jobs",
+    "title": "Hi, I am Vitor!"
   }
 }
