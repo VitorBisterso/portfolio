@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import * as serviceWorker from './__setup__/serviceWorker';
 
 import App from './App';
+
+import './i18n';
 import './index.css';
 
 ReactDOM.render(
