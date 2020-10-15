@@ -1,11 +1,11 @@
-.container {
+.translateDropdown-container {
   padding: .5vw;
-  background-color: var(--DEFAULT_WHITE);
   border-radius: var(--DEFAULT_BORDER_RADIUS);
   font-size: var(--TEXT_SMALL);
-  border-color: var(--DEFAULT_BLUE);
+  border-color: var(--DEFAULT_PURPLE);
+  background-color: var(--DEFAULT_WHITE);
 }
 
-.container:focus {
+.translateDropdown-container:focus {
   outline: none;
 }

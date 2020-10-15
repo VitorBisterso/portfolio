@@ -8,7 +8,7 @@ import './index.css';
 const TranslateDropdown = () => {
   return (
     <select
-      className="container"
+      className="translateDropdown-container"
       onChange={e => i18n.changeLanguage(e.target.value)}
     >
       {allLanguagesObject.map(language => (

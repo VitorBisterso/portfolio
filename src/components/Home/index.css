@@ -1,74 +1,67 @@
-.container {
+.home-container {
   display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.header {
+.home-header {
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.logoContainer {
-  display: flex;
-  flex: 1;
-}
-
-.logo {
-  width: 15%;
-}
-
-.menuFlags {
+.home-menuContainer {
   display: flex;
   flex: 1;
   flex-direction: row;
   align-items: center;
+  margin-top: 1vw;
 }
 
-.menu {
+.home-menu {
   flex: 1;
   flex-direction: row;
   font-family: 'Roboto-Light';
   margin: auto 0;
 }
 
-.menu ul {
+.home-menu ul {
   list-style: none;
   margin: 0;
 }
 
-.menu li {
+.home-menu li {
   float: right;
   margin: auto .5vw;
   font-size: var(--TEXT_NORMAL);
 }
 
-.menu li:hover {
+.home-menu li:hover {
   transition: linear 0.2s;
-  color: var(--DEFAULT_BLUE);
+  color: var(--DEFAULT_PURPLE);
 }
 
-.menu li:not(hover) {
+.home-menu li:not(hover) {
   transition: linear 0.2s;
   color: var(--DEFAULT_BLACK);
 }
 
-.selectLanguage {
+.home-selectLanguage {
   margin-left: 1.5vw;
+  margin-right: 1vw;
 }
 
-.homeBody {
+.home-body {
   margin: 1vw auto 0 auto;
   text-align: center;
 }
 
-.title {
+.home-title {
   font-family: 'Ubuntu';
   font-size: var(--TEXT_LARGEST);
 }
 
-.myPicture {
+.home-myPicture {
   border-radius: 50%;
 }
