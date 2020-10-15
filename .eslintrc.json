@@ -9,6 +9,8 @@
   "rules": {
     "prettier/prettier": "warn",
     "no-unused-vars": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/click-events-have-key-events": "off"
   }
 }

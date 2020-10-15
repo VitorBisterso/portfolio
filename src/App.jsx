@@ -1,8 +1,12 @@
 import React from 'react';
 
-import Translate from './components/translate';
+import Translate from './components/Translate';
+import TranslateButton from './components/TranslateButton';
 
 import logo from './logo.svg';
+import brFlag from './assets/img/brFlag.png';
+import usFlag from './assets/img/usFlag.png';
+
 import './App.css';
 
 const App = () => {
@@ -22,6 +26,8 @@ const App = () => {
         >
           <Translate tKey="test_message.learn_react" />
         </a>
+        <TranslateButton language="en" flag={usFlag} />
+        <TranslateButton language="pt" flag={brFlag} />
       </header>
     </div>
   );
