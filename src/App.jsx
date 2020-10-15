@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { useTranslation } from 'react-i18next';
+import Translate from './components/translate';
 
 import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
-  const { t } = useTranslation();
-
   return (
     <div className="App">
       <header className="App-header">
@@ -22,7 +20,7 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t('test_message.learn_react')}
+          <Translate tKey="test_message.learn_react" />
         </a>
       </header>
     </div>
