@@ -4,34 +4,25 @@
   flex-direction: column;
 }
 
-.home-header {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.home-menuContainer {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 1vw;
-}
-
 .home-menu {
-  flex: 1;
-  flex-direction: row;
-  margin: auto 0;
+  position: fixed;
+  right: 1.5vw;
+  z-index: 10;
+  box-shadow: 1px 1px 2px 1.5px rgba(0, 0, 0, 0.2);
+  border-radius: var(--DEFAULT_BORDER_RADIUS);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .home-menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   list-style: none;
   margin: 0;
+  padding: .5vw 1vw;
 }
 
 .home-menu li {
-  float: right;
   margin: auto .5vw;
   font-size: var(--TEXT_NORMAL);
 }
@@ -53,6 +44,7 @@
 
 .home-body {
   text-align: center;
+  margin-top: 7%;
 }
 
 .home-title {

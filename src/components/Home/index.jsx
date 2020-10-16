@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useRef } from 'react';
 import Zoom from 'react-reveal/Zoom';
 
@@ -11,33 +12,22 @@ import './index.css';
 
 const SectionsHr = () => <hr className="home-hr" />;
 
-const renderMenu = (onAboutClick, onAcademicClick, onProfessionalClick) => (
+const renderHeader = (onAboutClick, onAcademicClick, onProfessionalClick) => (
   <div className="home-menu">
     <ul>
-      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
-      <li onClick={onProfessionalClick}>
-        <Translate tKey="header.professional" />
-      </li>
-      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
-      <li onClick={onAcademicClick}>
-        <Translate tKey="header.academic" />
-      </li>
-      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
       <li onClick={onAboutClick}>
         <Translate tKey="header.about" />
       </li>
-    </ul>
-  </div>
-);
-
-const renderHeader = (onAboutClick, onAcademicClick, onProfessionalClick) => (
-  <div className="home-header">
-    <div className="home-menuContainer">
-      {renderMenu(onAboutClick, onAcademicClick, onProfessionalClick)}
-      <div className="home-selectLanguage">
+      <li onClick={onAcademicClick}>
+        <Translate tKey="header.academic" />
+      </li>
+      <li onClick={onProfessionalClick}>
+        <Translate tKey="header.professional" />
+      </li>
+      <li>
         <TranslateDropdown />
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 );
 
