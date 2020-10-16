@@ -39,6 +39,7 @@
 .home-menu li:hover {
   transition: linear 0.2s;
   color: var(--DEFAULT_PURPLE);
+  cursor: pointer;
 }
 
 .home-menu li:not(hover) {
