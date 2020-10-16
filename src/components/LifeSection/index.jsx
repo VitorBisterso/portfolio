@@ -50,9 +50,9 @@ const LifeSection = ({
 }) => (
   <div className="lifeSection-container">
     {hasTitle && (
-      <p className="lifeSection-title">
+      <div className="lifeSection-title">
         <Translate tKey={titleKey} />
-      </p>
+      </div>
     )}
     {renderLifeSectionBody(
       titleKey,
