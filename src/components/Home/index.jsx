@@ -1,4 +1,6 @@
 import React from 'react';
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
 
 import Translate from '../Translate';
 import TranslateDropdown from '../TranslateDropdown';
@@ -36,11 +38,15 @@ const renderHeader = () => (
 
 const renderBody = () => (
   <div className="home-body">
-    <div className="home-title">
-      <Translate tKey="header.title" />
-    </div>
+    <Slide left>
+      <div className="home-title">
+        <Translate tKey="header.title" />
+      </div>
+    </Slide>
 
-    <img alt="me" src={myself} className="home-myPicture" />
+    <Zoom>
+      <img alt="me" src={myself} className="home-myPicture" />
+    </Zoom>
   </div>
 );
 
