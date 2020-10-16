@@ -9,7 +9,9 @@ import myself from '../../assets/img/me.jpg';
 
 import './index.css';
 
-const renderMenu = onAcademicClick => (
+const SectionsHr = () => <hr className="home-hr" />;
+
+const renderMenu = (onAboutClick, onAcademicClick) => (
   <div className="home-menu">
     <ul>
       <li>
@@ -19,17 +21,18 @@ const renderMenu = onAcademicClick => (
       <li onClick={onAcademicClick}>
         <Translate tKey="header.academic" />
       </li>
-      <li>
+      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+      <li onClick={onAboutClick}>
         <Translate tKey="header.about" />
       </li>
     </ul>
   </div>
 );
 
-const renderHeader = onAcademicClick => (
+const renderHeader = (onAboutClick, onAcademicClick) => (
   <div className="home-header">
     <div className="home-menuContainer">
-      {renderMenu(onAcademicClick)}
+      {renderMenu(onAboutClick, onAcademicClick)}
       <div className="home-selectLanguage">
         <TranslateDropdown />
       </div>
@@ -37,7 +40,7 @@ const renderHeader = onAcademicClick => (
   </div>
 );
 
-const renderBody = academicRef => (
+const renderBody = (aboutRef, academicRef) => (
   <div className="home-body">
     <div className="home-title">
       <Translate tKey="header.title" />
@@ -46,8 +49,12 @@ const renderBody = academicRef => (
       <img alt="me" src={myself} className="home-myPicture" />
     </Zoom>
 
-    <hr className="home-hr" />
+    <SectionsHr />
 
+    <div ref={aboutRef}>
+      <Sections.AboutLifeSection />
+    </div>
+    <SectionsHr />
     <div ref={academicRef}>
       <Sections.AcademicLifeSection />
     </div>
@@ -55,16 +62,22 @@ const renderBody = academicRef => (
 );
 
 const Home = () => {
-  const academicRef = useRef(null);
   const scrollingBehavior = { behavior: 'smooth' };
+
+  const aboutRef = useRef(null);
+  const academicRef = useRef(null);
+
+  const onAboutClick = () => {
+    aboutRef.current.scrollIntoView(scrollingBehavior);
+  };
   const onAcademicClick = () => {
     academicRef.current.scrollIntoView(scrollingBehavior);
   };
 
   return (
     <div className="home-container">
-      {renderHeader(onAcademicClick)}
-      {renderBody(academicRef)}
+      {renderHeader(onAboutClick, onAcademicClick)}
+      {renderBody(aboutRef, academicRef)}
     </div>
   );
 };

@@ -1,4 +1,9 @@
 {
+
+  "about": {
+    "family": "My name is Vitor Bisterso dos Santos and I was born in 2002, Curitiba, Brazil. My father is an engineer, my mother is an english teacher and my brother will soon become an engineer.",
+    "uselessInfo": "I've always liked sports and video games a lot! I also love dogs but don't own any :("
+  },
   "academic": {
     "cotuca": "In 2016, I entered the Campinas' Technical High School (COTUCA) and started studying programming. After 3 years learning all about the IT world, I graduated as a programming technician.",
     "ifsp": "In 2020, I started my bachelor's degree, studying Computer Science at the Sao Paulo's Federal Institute (IFSP-SP). This course is predicted to finish by the end of 2023 and, when I made this portfolio, I was in my first year of college."

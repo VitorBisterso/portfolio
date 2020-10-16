@@ -17,7 +17,7 @@ const AcademicSection = () => (
       image={cotuca}
       imageClassName="academicSection-cotuca"
     />
-    <div className="academicSection-ifsp">
+    <div className="lifeSection-space">
       <LifeSection
         hasTitle={false}
         textKey="academic.ifsp"

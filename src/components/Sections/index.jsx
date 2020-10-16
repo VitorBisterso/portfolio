@@ -1,3 +1,4 @@
+import AboutLifeSection from './About';
 import AcademicLifeSection from './Academic';
 
-export default { AcademicLifeSection };
+export default { AboutLifeSection, AcademicLifeSection };

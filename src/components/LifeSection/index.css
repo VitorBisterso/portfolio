@@ -17,3 +17,7 @@
   align-items: center;
   flex-direction: row;
 }
+
+.lifeSection-space {
+  margin-top: 2vw;
+}

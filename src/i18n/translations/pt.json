@@ -1,4 +1,9 @@
 {
+
+  "about": {
+    "family": "Meu nome é Vitor Bisterso dos Santos e eu nasci em 2002 em Curitiba, Brasil. Tenho um pai engenheiro, uma mãe professora de inglês e um irmão que também será engenheiro em breve.",
+    "uselessInfo": "Eu sempre gostei muito de esportes e videogames no geral! Além disso, amo cachorros mas infelizmente não tenho nenhum :("
+  },
   "academic": {
     "cotuca": "Em 2016, entrei no Colégio Técnico de Campinas (COTUCA) e comecei o curso de informática. Depois de 3 anos de muitos estudos aprendendo sobre o mundo de TI, me formei como técnico em informática.",
     "ifsp": "Em 2020, eu comecei o meu curso de graduação, estudando Ciência da Computação no Instituto Federal de São Paulo (IFSP-SP). Esse curso tem previsão para acabar no final de 2023 e, quando eu fiz esse portfolio, eu estava no meu primeiro ano de faculdade."
