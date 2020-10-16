@@ -68,25 +68,6 @@
   margin-top: 3vw;
 }
 
-.home-lifeSection {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-lifeSectionTitle {
-  font-size: var(--TEXT_BIG);
-  text-align: left;
-  margin-bottom: 0;
-}
-
-.home-lifeSectionBody {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
 .home-cotuca {
   width: 15%;
   height: 15%;

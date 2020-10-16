@@ -3,7 +3,7 @@ import Zoom from 'react-reveal/Zoom';
 
 import Translate from '../Translate';
 import TranslateDropdown from '../TranslateDropdown';
-import TextBox from '../TextBox';
+import LifeSection from '../LifeSection';
 
 import cotuca from '../../assets/img/cotuca.png';
 import myself from '../../assets/img/me.jpg';
@@ -48,24 +48,14 @@ const renderBody = () => (
 
     <hr className="home-hr" />
 
-    <div className="home-lifeSection">
-      <p className="home-lifeSectionTitle">
-        <Translate tKey="header.academic" />
-      </p>
-      <div className="home-lifeSectionBody">
-        <TextBox
-          text="Em 2016, entrei no Colégio Técnico de Campinas (COTUCA)
-          e comecei o curso de informática. Depois de 3 anos de muitos
-          estudos aprendendo sobre o mundo de TI, me formei como técnico
-          em informática."
-          appearanceSide="left"
-          size={0.9}
-        />
-        <Zoom>
-          <img className="home-cotuca" alt="cotuca" src={cotuca} />
-        </Zoom>
-      </div>
-    </div>
+    <LifeSection
+      titleKey="header.academic"
+      textKey="academic.cotuca"
+      appearanceSide="left"
+      size={0.9}
+      image={cotuca}
+      imageClassName="home-cotuca"
+    />
   </div>
 );
 

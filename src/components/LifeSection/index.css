@@ -1,0 +1,19 @@
+.lifeSection-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.lifeSection-title {
+  font-size: var(--TEXT_BIG);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.lifeSection-body {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
