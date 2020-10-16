@@ -1,9 +1,23 @@
 .professionalSection-dextra {
-  max-width: 40%;
-  max-height: 40%;
+  width: 30%;
+  height: 30%;
 }
 
 .professionalSection-react {
   width: 25%;
   width: 25%;
+}
+
+@media all and (max-width: 767px) {
+  .professionalSection-dextra {
+    width: 75%;
+    height: 75%;
+    margin-right: 55vw;
+  }
+
+  .professionalSection-react {
+    width: 75%;
+    height: 75%;
+    margin-left: 35vw;
+  }
 }

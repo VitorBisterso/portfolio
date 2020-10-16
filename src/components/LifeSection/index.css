@@ -18,6 +18,12 @@
   flex-direction: row;
 }
 
+@media all and (max-width: 767px) {
+  .lifeSection-body {
+    display: block;
+  }
+}
+
 .lifeSection-space {
   margin-top: 2vw;
 }

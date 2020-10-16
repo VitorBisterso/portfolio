@@ -7,3 +7,17 @@
   width: 20%;
   height: 20%;
 }
+
+@media all and (max-width: 767px) {
+  .academicSection-cotuca {
+    width: 35%;
+    height: 35%;
+    margin-right: 55vw;
+  }
+
+  .academicSection-ifspImage {
+    width: 45%;
+    height: 45%;
+    margin-left: 55vw;
+  }
+}

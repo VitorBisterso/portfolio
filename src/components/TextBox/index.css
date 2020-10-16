@@ -6,3 +6,10 @@
   color: var(--DEFAULT_WHITE);
   font-size: var(--TEXT_NORMAL);
 }
+
+@media all and (max-width: 767px) {
+  .textBox-container {
+    margin-bottom: 1.5vw;
+  }
+}
+

@@ -52,6 +52,12 @@
   font-size: var(--TEXT_LARGEST);
 }
 
+@media all and (max-width: 465px) {
+  .home-title {
+    padding-top: 5vw;
+  }
+}
+
 .home-myPicture {
   max-width: 70%;
   max-height: 70%;

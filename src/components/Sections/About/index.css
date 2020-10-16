@@ -8,3 +8,17 @@
   width: 15%;
   height: 15%;
 }
+
+@media all and (max-width: 767px) {
+  .aboutSection-family {
+    width: 75%;
+    height: 75%;
+    margin-right: 55vw;
+  }
+
+  .aboutSection-teemo {
+    width: 45%;
+    height: 45%;
+    margin-left: 55vw;
+  }
+}
