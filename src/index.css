@@ -5,22 +5,15 @@
 
   --TEXT_SMALL: 15px;
   --TEXT_NORMAL: 18px;
+  --TEXT_BIG: 35px;
   --TEXT_LARGEST: 50px;
 
   --DEFAULT_BORDER_RADIUS: 5px;
 }
 
-#root:after {
-  content : "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('./assets/img/bg.jpeg');
-  width: 100%;
-  height: 100%;
-  opacity : 0.7;
-  z-index: -1;
+body {
+  font-family: 'Ubuntu';
+  margin: 1vw 1.5vw;
 }
 
 @font-face {

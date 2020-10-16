@@ -1,0 +1,8 @@
+.textBox-container {
+  border-radius: var(--DEFAULT_BORDER_RADIUS);
+  background-color: var(--DEFAULT_PURPLE);
+  text-align: justify;
+  padding: 1vw 3vw 1vw 2vw;
+  color: var(--DEFAULT_WHITE);
+  font-size: var(--TEXT_NORMAL);
+}

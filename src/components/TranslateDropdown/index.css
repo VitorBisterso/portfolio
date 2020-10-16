@@ -4,6 +4,7 @@
   font-size: var(--TEXT_SMALL);
   border-color: var(--DEFAULT_PURPLE);
   background-color: var(--DEFAULT_WHITE);
+  font-family: 'Ubuntu';
 }
 
 .translateDropdown-container:focus {
