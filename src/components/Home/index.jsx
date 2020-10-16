@@ -3,9 +3,8 @@ import Zoom from 'react-reveal/Zoom';
 
 import Translate from '../Translate';
 import TranslateDropdown from '../TranslateDropdown';
-import LifeSection from '../LifeSection';
+import Sections from '../Sections';
 
-import cotuca from '../../assets/img/cotuca.png';
 import myself from '../../assets/img/me.jpg';
 
 import './index.css';
@@ -48,14 +47,7 @@ const renderBody = () => (
 
     <hr className="home-hr" />
 
-    <LifeSection
-      titleKey="header.academic"
-      textKey="academic.cotuca"
-      appearanceSide="left"
-      size={0.9}
-      image={cotuca}
-      imageClassName="home-cotuca"
-    />
+    <Sections.AcademicLifeSection />
   </div>
 );
 

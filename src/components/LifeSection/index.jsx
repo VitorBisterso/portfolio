@@ -40,6 +40,7 @@ const renderLifeSectionBody = (
   );
 
 const LifeSection = ({
+  hasTitle,
   titleKey,
   textKey,
   appearanceSide,
@@ -48,9 +49,11 @@ const LifeSection = ({
   imageClassName,
 }) => (
   <div className="lifeSection-container">
-    <p className="lifeSection-title">
-      <Translate tKey={titleKey} />
-    </p>
+    {hasTitle && (
+      <p className="lifeSection-title">
+        <Translate tKey={titleKey} />
+      </p>
+    )}
     {renderLifeSectionBody(
       titleKey,
       textKey,
@@ -63,12 +66,18 @@ const LifeSection = ({
 );
 
 LifeSection.propTypes = {
-  titleKey: PropTypes.string.isRequired,
+  hasTitle: PropTypes.bool,
+  titleKey: PropTypes.string,
   textKey: PropTypes.string.isRequired,
   appearanceSide: PropTypes.string.isRequired,
   size: PropTypes.number.isRequired,
   image: PropTypes.node.isRequired,
   imageClassName: PropTypes.string.isRequired,
+};
+
+LifeSection.defaultProps = {
+  hasTitle: true,
+  titleKey: '',
 };
 
 export default LifeSection;
