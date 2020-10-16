@@ -11,7 +11,11 @@
   "header": {
     "about": "Sobre mim",
     "academic": "Vida acadêmica",
-    "professional": "Empregos",
+    "professional": "Vida profissional",
     "title": "Olá, eu sou o Vitor!"
+  },
+  "professional": {
+    "dextra": "Em 2019, fiz um estágio de um ano como estagiário de desenvolvimento em uma consultoria de software chamada Dextra, localizada em Campinas. Com o final do ano de estágio, a Dextra me ofereceu um emprego como desenvolvedor júnior mas, infelizmente, não pude aceitar devido a problemas de horário e logística.",
+    "skills": "Nesse ano de estágio, atuei em projetos para empresas como a Nextel e Swiss Sense. Esses projetos utilizavam, principalmente, tecnologias como react, react-native e redux."
   }
 }

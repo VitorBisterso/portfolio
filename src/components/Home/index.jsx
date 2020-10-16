@@ -11,10 +11,11 @@ import './index.css';
 
 const SectionsHr = () => <hr className="home-hr" />;
 
-const renderMenu = (onAboutClick, onAcademicClick) => (
+const renderMenu = (onAboutClick, onAcademicClick, onProfessionalClick) => (
   <div className="home-menu">
     <ul>
-      <li>
+      {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
+      <li onClick={onProfessionalClick}>
         <Translate tKey="header.professional" />
       </li>
       {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
@@ -29,10 +30,10 @@ const renderMenu = (onAboutClick, onAcademicClick) => (
   </div>
 );
 
-const renderHeader = (onAboutClick, onAcademicClick) => (
+const renderHeader = (onAboutClick, onAcademicClick, onProfessionalClick) => (
   <div className="home-header">
     <div className="home-menuContainer">
-      {renderMenu(onAboutClick, onAcademicClick)}
+      {renderMenu(onAboutClick, onAcademicClick, onProfessionalClick)}
       <div className="home-selectLanguage">
         <TranslateDropdown />
       </div>
@@ -40,7 +41,7 @@ const renderHeader = (onAboutClick, onAcademicClick) => (
   </div>
 );
 
-const renderBody = (aboutRef, academicRef) => (
+const renderBody = (aboutRef, academicRef, professionalRef) => (
   <div className="home-body">
     <div className="home-title">
       <Translate tKey="header.title" />
@@ -48,15 +49,20 @@ const renderBody = (aboutRef, academicRef) => (
     <Zoom>
       <img alt="me" src={myself} className="home-myPicture" />
     </Zoom>
-
     <SectionsHr />
 
     <div ref={aboutRef}>
       <Sections.AboutLifeSection />
     </div>
     <SectionsHr />
+
     <div ref={academicRef}>
       <Sections.AcademicLifeSection />
+    </div>
+    <SectionsHr />
+
+    <div ref={professionalRef}>
+      <Sections.ProfessionalLifeSection />
     </div>
   </div>
 );
@@ -66,6 +72,7 @@ const Home = () => {
 
   const aboutRef = useRef(null);
   const academicRef = useRef(null);
+  const professionalRef = useRef(null);
 
   const onAboutClick = () => {
     aboutRef.current.scrollIntoView(scrollingBehavior);
@@ -73,11 +80,14 @@ const Home = () => {
   const onAcademicClick = () => {
     academicRef.current.scrollIntoView(scrollingBehavior);
   };
+  const onProfessionalClick = () => {
+    professionalRef.current.scrollIntoView(scrollingBehavior);
+  };
 
   return (
     <div className="home-container">
-      {renderHeader(onAboutClick, onAcademicClick)}
-      {renderBody(aboutRef, academicRef)}
+      {renderHeader(onAboutClick, onAcademicClick, onProfessionalClick)}
+      {renderBody(aboutRef, academicRef, professionalRef)}
     </div>
   );
 };

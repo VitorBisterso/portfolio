@@ -11,7 +11,11 @@
   "header": {
     "about": "About me",
     "academic": "Academic life",
-    "professional": "Jobs",
+    "professional": "Professional life",
     "title": "Hi, I am Vitor!"
+  },
+  "professional": {
+    "dextra": "In 2019, I've worked for a year as a development intern in a software consulting company known as Dextra, in Campinas. By the end of the year, I was given the opportunity to continue to work there as a junior developer but, due to conflicting schedules and logistic problems, I could not accept the job.",
+    "skills": "In my time there, I've worked in projects for companies like Nextel and Swiss Sense. This projects mainly used technologies like react, react-native and redux."
   }
 }
