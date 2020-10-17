@@ -3,6 +3,7 @@
   --DEFAULT_PURPLE: rgba(124, 77, 255, 1);
   --DEFAULT_WHITE: rgba(255, 255, 255, 1);
 
+  --TEXT_SMALLEST: 12px;
   --TEXT_SMALL: 15px;
   --TEXT_NORMAL: 18px;
   --TEXT_BIG: 35px;

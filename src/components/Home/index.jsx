@@ -5,14 +5,22 @@ import Zoom from 'react-reveal/Zoom';
 import Translate from '../Translate';
 import TranslateDropdown from '../TranslateDropdown';
 import Sections from '../Sections';
+import ContactButton from '../ContactButton';
 
 import myself from '../../assets/img/me.jpg';
+import github from '../../assets/img/github.png';
+import linkedin from '../../assets/img/linkedin.png';
 
 import './index.css';
 
 const SectionsHr = () => <hr className="home-hr" />;
 
-const renderHeader = (onAboutClick, onAcademicClick, onProfessionalClick) => (
+const renderHeader = (
+  onAboutClick,
+  onAcademicClick,
+  onProfessionalClick,
+  onContactClick
+) => (
   <div className="home-menu">
     <ul>
       <li>
@@ -28,6 +36,11 @@ const renderHeader = (onAboutClick, onAcademicClick, onProfessionalClick) => (
       <li>
         <button type="button" onClick={onProfessionalClick}>
           <Translate tKey="header.professional" />
+        </button>
+      </li>
+      <li>
+        <button type="button" onClick={onContactClick}>
+          <Translate tKey="header.contact" />
         </button>
       </li>
       <li className="home-selectLanguage">
@@ -63,12 +76,25 @@ const renderBody = (aboutRef, academicRef, professionalRef) => (
   </div>
 );
 
+const renderFooter = contactRef => (
+  <div ref={contactRef} className="home-footer">
+    <ContactButton image={github} link="https://github.com/VitorBisterso" />
+    <div>
+      <ContactButton
+        image={linkedin}
+        link="https://www.linkedin.com/in/vitor-bisterso-dos-santos-18a574173/"
+      />
+    </div>
+  </div>
+);
+
 const Home = () => {
   const scrollingBehavior = { behavior: 'smooth' };
 
   const aboutRef = useRef(null);
   const academicRef = useRef(null);
   const professionalRef = useRef(null);
+  const contactRef = useRef(null);
 
   const onAboutClick = () => {
     aboutRef.current.scrollIntoView(scrollingBehavior);
@@ -79,11 +105,20 @@ const Home = () => {
   const onProfessionalClick = () => {
     professionalRef.current.scrollIntoView(scrollingBehavior);
   };
+  const onContactClick = () => {
+    contactRef.current.scrollIntoView(scrollingBehavior);
+  };
 
   return (
     <div className="home-container">
-      {renderHeader(onAboutClick, onAcademicClick, onProfessionalClick)}
+      {renderHeader(
+        onAboutClick,
+        onAcademicClick,
+        onProfessionalClick,
+        onContactClick
+      )}
       {renderBody(aboutRef, academicRef, professionalRef)}
+      {renderFooter(contactRef)}
     </div>
   );
 };
