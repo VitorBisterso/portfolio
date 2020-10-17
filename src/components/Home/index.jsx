@@ -15,16 +15,22 @@ const SectionsHr = () => <hr className="home-hr" />;
 const renderHeader = (onAboutClick, onAcademicClick, onProfessionalClick) => (
   <div className="home-menu">
     <ul>
-      <li onClick={onAboutClick}>
-        <Translate tKey="header.about" />
-      </li>
-      <li onClick={onAcademicClick}>
-        <Translate tKey="header.academic" />
-      </li>
-      <li onClick={onProfessionalClick}>
-        <Translate tKey="header.professional" />
+      <li>
+        <button type="button" onClick={onAboutClick}>
+          <Translate tKey="header.about" />
+        </button>
       </li>
       <li>
+        <button type="button" onClick={onAcademicClick}>
+          <Translate tKey="header.academic" />
+        </button>
+      </li>
+      <li>
+        <button type="button" onClick={onProfessionalClick}>
+          <Translate tKey="header.professional" />
+        </button>
+      </li>
+      <li className="home-selectLanguage">
         <TranslateDropdown />
       </li>
     </ul>

@@ -23,24 +23,39 @@
   padding: .5vw 1vw;
 }
 
-.home-menu li {
-  margin: auto .5vw;
+.home-menu button {
+  margin: 0 .5vw;
+  font-family: 'Ubuntu';
   font-size: var(--TEXT_NORMAL);
+  background-color: transparent;
+  border-color: transparent;
 }
 
-.home-menu li:hover {
+@media all and (max-width: 767px) {
+  .home-menu button {
+    margin: 0;
+    font-size: var(--TEXT_SMALL);
+  }
+}
+
+.home-menu button:focus {
+  outline: none;
+}
+
+.home-menu button:hover {
   transition: linear 0.2s;
   color: var(--DEFAULT_PURPLE);
   cursor: pointer;
 }
 
-.home-menu li:not(hover) {
+.home-menu button:not(hover) {
   transition: linear 0.2s;
   color: var(--DEFAULT_BLACK);
 }
 
 .home-selectLanguage {
-  margin-left: 1.5vw;
+  display: flex;
+  align-items: center;
 }
 
 .home-body {
