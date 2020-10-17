@@ -22,7 +22,7 @@ const AboutSection = () => (
         hasTitle={false}
         textKey="about.uselessInfo"
         appearanceSide="right"
-        size={0.9}
+        size={0.95}
         image={teemo}
         imageClassName="aboutSection-teemo"
       />

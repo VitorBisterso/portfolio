@@ -5,6 +5,7 @@
   padding: 1vw 3vw 1vw 2vw;
   color: var(--DEFAULT_WHITE);
   font-size: var(--TEXT_NORMAL);
+  font-weight: 700;
 }
 
 @media all and (max-width: 767px) {
